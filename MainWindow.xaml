@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PWpfLauncher"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Launcher" Height="160" Width="500" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="Transparent" WindowStyle="None">
     <Grid>
-        
+        <Border BorderThickness="0" Height="160" Background="#FF2B2A5D" CornerRadius="30">
+        </Border>
+        <Label Content="Please wait while updating application. . ." HorizontalAlignment="Left" Height="28" Margin="10,0,0,105" VerticalAlignment="Bottom" Width="305" Foreground="#FEFEFF" FontFamily="Verdana" FontWeight="Bold" />
+        <Label x:Name="lbl_total" Content="Total File" HorizontalAlignment="Left" Height="25" Margin="10,0,0,75" VerticalAlignment="Bottom" Width="142" Foreground="#FEFEFF" FontFamily="Verdana" />
+        <Label x:Name="lbl_file1" Content="Nama File" HorizontalAlignment="Left" Height="22" Margin="10,0,0,49" VerticalAlignment="Bottom" Width="230" Foreground="#FEFEFF" FontFamily="Verdana" FontSize="10" />
+        <Label x:Name="lbl_file2" Content="Nama File" HorizontalAlignment="Left" Height="22" Margin="260,0,0,49" VerticalAlignment="Bottom" Width="230" Foreground="#FEFEFF" FontFamily="Verdana" FontSize="10" />
+        <ProgressBar x:Name="pb_total" HorizontalAlignment="Left" Height="3" Margin="10,0,0,71" VerticalAlignment="Bottom" Width="480">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="1,1" MappingMode="RelativeToBoundingBox" StartPoint="0,0">
+                    <GradientStop Color="#FFF76A6E" Offset="0"/>
+                    <GradientStop Color="#FFFE41CD" Offset="1"/>
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+        </ProgressBar>
+        <ProgressBar x:Name="pb_1" HorizontalAlignment="Left" Height="5" Margin="10,0,0,44" VerticalAlignment="Bottom" Width="230" Value="0">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="1,1" MappingMode="RelativeToBoundingBox" StartPoint="0,0">
+                    <GradientStop Color="#7F71DB" Offset="0"/>
+                    <GradientStop Color="#DF71DE" Offset="1"/>
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+        </ProgressBar>
+        <ProgressBar x:Name="pb_2" HorizontalAlignment="Left" Height="5" Margin="260,0,0,44" VerticalAlignment="Bottom" Width="230" Value="0">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="1,1" MappingMode="RelativeToBoundingBox" StartPoint="0,0">
+                    <GradientStop Color="#7F71DB" Offset="0"/>
+                    <GradientStop Color="#DF71DE" Offset="1"/>
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+        </ProgressBar>
     </Grid>
 </Window>
